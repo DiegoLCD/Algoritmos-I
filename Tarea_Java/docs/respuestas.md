@@ -1,6 +1,6 @@
 # **Respuestas de ejercicios**
 
-1) Defina los conceptos de: 
+### 1) Defina los conceptos de: 
 
 **a)** Clase:  
     Molde o plano de fabricacion de los objetos.  
@@ -45,3 +45,17 @@
     * La modularidad se caracteriza por dividir de forma coherente cada parte del proyecto de forma que los pequeños módulos estén aislados, sean independientes, tengan cohesión y permitan mostrar solo lo necesario cuando se los llama.  
     * Ventajas: Fácil de mantener, depurar y debuggear. Permite trabajar en grandes equipos donde cada uno tiene uno o mas módulos para hacer o trabajar lo que lo hace mucho mas ordenado.
 
+## Introduccion a Java:
+
+### 11) Que sucede cuando se aplica f.init(80)  
+Rta: Se le asigna el valor de 80 a longreg  
+
+### 12) Indicar salida del programa
+Rta: (x=25, y=25)  
+Por que?: Resulta que el codigo tiene 2 constructores para Punto, uno que recibe solo 1 valor ```Punto(int z)``` y uno que  
+recibe 2 valores ```Punto(int a, int b)``` . La diferencia es que el constructor que recibe 1 solo valor, a traves del ```this```asigna  
+a las 2 variables el mismo valor, mientras que el otro constructor las asigna por separado. Cuando el Main crea al punto en ```Punto p = new punto(25)``` entra por el constructor que recibe un solo valor y se lo asigna a ambas variables. Por lo tanto, la salida deberia ser (x=25, y=25)  
+
+### 13) Cual es el cosntructor que se invoca?  
+Rta: 
+    

@@ -12,7 +12,13 @@ public class Main {
 
         miLamparita.apagar();
 
-        miLamparita.mostrarEstado();
+        miLamparita.mostrarEstado(); 
 
+
+        Archivo f = new Archivo();
+        f.init(80);
+
+        f.estadoLongreg();
     }
+
 }

@@ -52,10 +52,16 @@ Rta: Se le asigna el valor de 80 a longreg
 
 ### 12) Indicar salida del programa
 Rta: (x=25, y=25)  
-Por que?: Resulta que el codigo tiene 2 constructores para Punto, uno que recibe solo 1 valor ```Punto(int z)``` y uno que  
-recibe 2 valores ```Punto(int a, int b)``` . La diferencia es que el constructor que recibe 1 solo valor, a traves del ```this```asigna  
-a las 2 variables el mismo valor, mientras que el otro constructor las asigna por separado. Cuando el Main crea al punto en ```Punto p = new punto(25)``` entra por el constructor que recibe un solo valor y se lo asigna a ambas variables. Por lo tanto, la salida deberia ser (x=25, y=25)  
+Por que?: Resulta que el codigo tiene 2 constructores para Punto, uno que recibe solo 1 valor `Punto(int z)` y uno que  
+recibe 2 valores `Punto(int a, int b)` . La diferencia es que el constructor que recibe 1 solo valor, a traves del `this`asigna  
+a las 2 variables el mismo valor, mientras que el otro constructor las asigna por separado. Cuando el Main crea al punto en `Punto p = new punto(25)` entra por el constructor que recibe un solo valor y se lo asigna a ambas variables. Por lo tanto, la salida deberia ser (x=25, y=25)  
 
 ### 13) Cual es el cosntructor que se invoca?  
-Rta: 
-    
+Rta: invoca al primer constructor, el que asigna num=0
+
+### 14) Cual metodo invoca cada llamado?
+Rta: `f(72.25)` esta queriendo meter un float, por lo que Java va a ir constructor por constructor hasta encontrar uno que admita floats, en este caso `f(double d)`  
+para `f(0)` utilizara `f(int i)`  
+para `f('z')` utilizara `f(char c)`  
+
+###

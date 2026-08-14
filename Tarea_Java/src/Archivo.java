@@ -8,5 +8,8 @@ public class Archivo {
     public void estadoLongreg() {
         System.out.println(longreg);
     }
+    public int valor() {return longreg;}
     
 }
+
+

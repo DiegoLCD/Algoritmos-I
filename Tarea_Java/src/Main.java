@@ -1,5 +1,6 @@
 public class Main {
 
+    /*
     public static void main(String[] args) {
 
         Lamparita miLamparita = new Lamparita();
@@ -20,5 +21,12 @@ public class Main {
 
         f.estadoLongreg();
     }
+    */
+   public static void main(String[] args) {
 
+    Hora miHora = new Hora();
+
+    System.out.println(miHora);
+
+   }
 }

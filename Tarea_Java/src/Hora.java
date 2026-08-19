@@ -31,8 +31,16 @@ public class Hora {
         this.ss = c;
     }
 
+    public static Hora sumarHoras(Hora hora1, Hora hora2) {
+        int sumarSegundos = hora1.ss + hora2.ss;
+        int sumarMinutos = hora1.mm + hora2.mm;
+        int sumarHoras = hora1.hh + hora2.hh;
+
+        return new Hora(sumarHoras,sumarMinutos,sumarSegundos);
+    }
+
     @Override
     public String toString() {
-            return "Hora:"+ this.hh +":"+ this.mm +":"+ this.ss ;
+            return String.format("Hora:%02d:%02d:%02d", this.hh, this.mm, this.ss );
         }
 }

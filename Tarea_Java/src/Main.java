@@ -24,9 +24,13 @@ public class Main {
 /* 
    public static void main(String[] args) {
 
-    Hora miHora = new Hora();
+    Hora miHora1 = new Hora(1,60,3);
+    Hora miHora2 = new Hora(2,7,3);
+    Hora horaSumada = Hora.sumarHoras(miHora1, miHora2);
 
-    System.out.println(miHora);
+    System.out.println(miHora1);
+    System.out.println(miHora2);
+    System.out.println(horaSumada);
 
    }
 */

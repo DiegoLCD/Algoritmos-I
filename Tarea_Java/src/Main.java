@@ -2,7 +2,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-
+/* 
         Lamparita miLamparita = new Lamparita();
 
         miLamparita.mostrarEstado();
@@ -21,17 +21,17 @@ public class Main {
 
         f.estadoLongreg();
     }
-/* 
-   public static void main(String[] args) {
+*/
 
-    Hora miHora1 = new Hora(1,60,3);
-    Hora miHora2 = new Hora(2,7,3);
+    Hora miHora1 = new Hora(20,58,55);
+    Hora miHora2 = new Hora(5,7,30);
     Hora horaSumada = Hora.sumarHoras(miHora1, miHora2);
 
     System.out.println(miHora1);
     System.out.println(miHora2);
     System.out.println(horaSumada);
 
+
    }
-*/
+
 }

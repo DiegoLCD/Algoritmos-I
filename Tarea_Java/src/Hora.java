@@ -33,10 +33,15 @@ public class Hora {
 
     public static Hora sumarHoras(Hora hora1, Hora hora2) {
         int sumarSegundos = hora1.ss + hora2.ss;
-        int sumarMinutos = hora1.mm + hora2.mm;
-        int sumarHoras = hora1.hh + hora2.hh;
+        int restoSegundos = sumarSegundos / 60; // <-- Como esta clarado un `int` el resultado será solo la parte entera de la división.
+        int sumarSegundosFinal = sumarSegundos % 60; // <-- El resto de la división nos da los segundos finales.
+        int sumarMinutos = hora1.mm + hora2.mm + restoSegundos;
+        int restoMinutos = sumarMinutos / 60;
+        int sumarMinutosFinal = sumarMinutos % 60;
+        int sumarHoras = hora1.hh + hora2.hh + restoMinutos;
+        int sumarHorasFinal = sumarHoras % 24; // <-- Para que la hora no pase de 24 horas.
 
-        return new Hora(sumarHoras,sumarMinutos,sumarSegundos);
+        return new Hora(sumarHorasFinal,sumarMinutosFinal,sumarSegundosFinal);
     }
 
     @Override

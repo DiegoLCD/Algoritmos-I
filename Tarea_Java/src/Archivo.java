@@ -1,3 +1,5 @@
+// Ejercicio 11
+
 public class Archivo {
     String nombre;
     int longreg;
